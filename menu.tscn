@@ -9,29 +9,86 @@ offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_lti8b")
 
-[node name="level_1" type="Button" parent="." unique_id=2112049688]
-layout_mode = 0
-offset_left = 1.0
-offset_top = -14.0
-offset_right = 9.0
-offset_bottom = 0.08602142
-scale = Vector2(2.2166865, 0.70992374)
-
-[node name="level_2" type="Button" parent="." unique_id=1109008137]
-layout_mode = 0
-offset_left = 30.0
-offset_top = -15.0
-offset_right = 38.0
-offset_bottom = -7.0
-
-[node name="Button3" type="Button" parent="." unique_id=333692006]
-layout_mode = 0
-offset_left = 47.0
-offset_top = -15.0
-offset_right = 55.0
-offset_bottom = -7.0
-
 [node name="ColorRect" type="ColorRect" parent="." unique_id=137617182]
 layout_mode = 0
+offset_top = -2.0
 offset_right = 1153.0
-offset_bottom = 649.0
+offset_bottom = 671.0
+color = Color(0.91798484, 0.9690184, 0.6767413, 1)
+
+[node name="level_1" type="Button" parent="." unique_id=2112049688]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 2.512
+anchor_top = 6.9750004
+anchor_right = 8.762
+anchor_bottom = 9.225
+offset_left = 0.019996643
+offset_right = 0.019989014
+theme_override_colors/font_color = Color(0.007843138, 0.007843138, 0.007843138, 1)
+theme_override_font_sizes/font_size = 40
+text = "Level 1"
+
+[node name="level_2" type="Button" parent="." unique_id=1109008137]
+custom_minimum_size = Vector2(9, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 11.275001
+anchor_top = 6.9750004
+anchor_right = 17.525002
+anchor_bottom = 9.225
+offset_left = -3.0517578e-05
+offset_right = -6.1035156e-05
+theme_override_colors/font_color = Color(0.007843138, 0.007843138, 0.007843138, 1)
+theme_override_font_sizes/font_size = 40
+text = "Level 2"
+
+[node name="level_3" type="Button" parent="." unique_id=333692006]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 20.037
+anchor_top = 6.9750004
+anchor_right = 26.287
+anchor_bottom = 9.225
+offset_left = 0.019958496
+offset_right = 0.020019531
+theme_override_colors/font_color = Color(0.007843138, 0.007843138, 0.007843138, 1)
+theme_override_font_sizes/font_size = 40
+text = "Level 3"
+
+[node name="Label" type="Label" parent="." unique_id=1341446299]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 28.750002
+anchor_bottom = 1.825
+offset_right = -0.00012207031
+theme_override_colors/font_color = Color(0.011764706, 0.011764706, 0.011764706, 1)
+theme_override_font_sizes/font_size = 53
+text = "Welcome to Jump and Jump! Choose a Level"
+horizontal_alignment = 1
+
+[node name="coming soon 2" type="Label" parent="." unique_id=472403075]
+layout_mode = 0
+offset_left = 451.0
+offset_top = 340.0
+offset_right = 701.0
+offset_bottom = 369.0
+theme_override_colors/font_color = Color(0.011764706, 0.011764706, 0.011764706, 1)
+theme_override_font_sizes/font_size = 21
+text = "coming soon"
+horizontal_alignment = 1
+
+[node name="coming soon 3" type="Label" parent="." unique_id=307704739]
+layout_mode = 0
+offset_left = 802.0
+offset_top = 340.0
+offset_right = 1052.0
+offset_bottom = 369.0
+theme_override_colors/font_color = Color(0.011764706, 0.011764706, 0.011764706, 1)
+theme_override_font_sizes/font_size = 21
+text = "coming soon"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="level_1" to="." method="_on_level_1_pressed"]
+[connection signal="pressed" from="level_2" to="." method="_on_level_2_pressed"]
+[connection signal="pressed" from="level_3" to="." method="_on_button_3_pressed"]

@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="jumpandrun"
-run/main_scene="uid://b1bdfdmd1b78u"
+run/main_scene="uid://bo03pmeo4kdvq"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
