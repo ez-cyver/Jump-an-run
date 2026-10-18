@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://ci7q7o083geb3"]
+
+[ext_resource type="Script" uid="uid://bx1guvc2y42xc" path="res://level_2_complete.gd" id="1_jkcng"]
+
+[node name="level_2_complete" type="Node2D" unique_id=2039307694]
+script = ExtResource("1_jkcng")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1124763338]
+offset_right = 1154.0
+offset_bottom = 647.0
+color = Color(0.91764706, 0.96862745, 0.6784314, 1)
+
+[node name="Label" type="Label" parent="." unique_id=1616637363]
+offset_right = 1151.0
+offset_bottom = 97.5
+theme_override_colors/font_color = Color(0.011764706, 0.011764706, 0.011764706, 1)
+theme_override_font_sizes/font_size = 70
+text = "Level 2 complete"
+horizontal_alignment = 1
+
+[node name="level_3" type="Button" parent="." unique_id=1980805106]
+custom_minimum_size = Vector2(0.085, 0)
+offset_left = 276.0
+offset_top = 209.0
+offset_right = 876.0
+offset_bottom = 309.0
+theme_override_colors/font_color = Color(0.007843138, 0.007843138, 0.007843138, 1)
+theme_override_font_sizes/font_size = 50
+text = "continue (Level 3)"
+
+[node name="menu" type="Button" parent="." unique_id=545441799]
+offset_left = 276.0
+offset_top = 442.5
+offset_right = 876.0
+offset_bottom = 542.5
+theme_override_colors/font_color = Color(0.007843138, 0.007843138, 0.007843138, 1)
+theme_override_font_sizes/font_size = 50
+text = "return to menu"
+
+[node name="Label2" type="Label" parent="." unique_id=1813397067]
+offset_left = 426.0
+offset_top = 279.0
+offset_right = 705.0
+offset_bottom = 314.0
+theme_override_colors/font_color = Color(0.011764706, 0.011764706, 0.011764706, 1)
+theme_override_font_sizes/font_size = 23
+text = "comming soon"
+horizontal_alignment = 1
+
+[connection signal="button_down" from="level_3" to="." method="_on_level_3_button_down"]
+[connection signal="button_down" from="menu" to="." method="_on_menu_button_down"]

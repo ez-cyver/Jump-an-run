@@ -1,21 +1,22 @@
 [gd_scene format=3 uid="uid://b1bdfdmd1b78u"]
 
 [ext_resource type="Script" uid="uid://mju1wiag47ol" path="res://player.gd" id="1_hbghi"]
-[ext_resource type="Texture2D" path="res://Gemini_Generated_Image_iqejkhiqejkhiqej.jpeg" id="1_hn12h"]
+[ext_resource type="Texture2D" uid="uid://dnes2b5qvjo6l" path="res://Cave.jpeg" id="1_ihfcg"]
+[ext_resource type="Script" uid="uid://dxvomrmaefqor" path="res://level_1.gd" id="1_rka8t"]
 [ext_resource type="Texture2D" uid="uid://6i42nhfbh0ey" path="res://icon.svg" id="2_hn12h"]
-[ext_resource type="Texture2D" path="res://Gemini_Generated_Image_x876n3x876n3x876.jpeg" id="2_ihfcg"]
+[ext_resource type="Texture2D" uid="uid://c04x08nostj3m" path="res://schield.jpeg" id="2_rka8t"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_585xr"]
 size = Vector2(117.5, 114)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hn12h"]
-size = Vector2(661, 544)
+size = Vector2(661, 725)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rww2e"]
-size = Vector2(137, 541)
+size = Vector2(138, 725)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2d5ya"]
-size = Vector2(1081, 763)
+size = Vector2(1081.75, 937.75)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u2dad"]
 size = Vector2(21, 13)
@@ -24,14 +25,15 @@ size = Vector2(21, 13)
 size = Vector2(128, 122.25)
 
 [node name="Level 1" type="Node2D" unique_id=1119906859]
+script = ExtResource("1_rka8t")
 
 [node name="Background" type="StaticBody2D" parent="." unique_id=1393563365]
 
 [node name="ColorRect" type="ColorRect" parent="Background" unique_id=1571989023]
-offset_left = -769.0
-offset_top = -698.0
-offset_right = 4849.0
-offset_bottom = 1192.0
+offset_left = -1107.0
+offset_top = -554.0
+offset_right = 5845.0
+offset_bottom = 1336.0
 color = Color(0.38431373, 0.7882353, 0.9647059, 1)
 
 [node name="Cave" type="TileMap" parent="." unique_id=463099614]
@@ -39,23 +41,23 @@ position = Vector2(-859, -630)
 format = 2
 
 [node name="cave" type="Sprite2D" parent="Cave" unique_id=1748594857]
-position = Vector2(3155, 883.75)
+position = Vector2(3214.001, 880)
 scale = Vector2(0.64203227, 0.63909304)
-texture = ExtResource("1_hn12h")
+texture = ExtResource("1_ihfcg")
 
-[node name="Area2D" type="Area2D" parent="Cave" unique_id=1395256987]
+[node name="entrance_cave" type="Area2D" parent="Cave" unique_id=1395256987]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Cave/Area2D" unique_id=1930587443]
-position = Vector2(3236.25, 951)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cave/entrance_cave" unique_id=1930587443]
+position = Vector2(3292.25, 951)
 shape = SubResource("RectangleShape2D_585xr")
 
 [node name="Schield" type="TileMap" parent="." unique_id=1637860733]
 format = 2
 
 [node name="schield" type="Sprite2D" parent="Schield" unique_id=642521299]
-position = Vector2(103.99999, 550)
+position = Vector2(103.99999, 552)
 scale = Vector2(0.16830257, 0.20618875)
-texture = ExtResource("2_ihfcg")
+texture = ExtResource("2_rka8t")
 
 [node name="Schield2" type="TileMap" parent="." unique_id=728912479]
 format = 2
@@ -63,7 +65,7 @@ format = 2
 [node name="schield" type="Sprite2D" parent="Schield2" unique_id=482980468]
 position = Vector2(1854.9999, 340)
 scale = Vector2(0.16830257, 0.20618875)
-texture = ExtResource("2_ihfcg")
+texture = ExtResource("2_rka8t")
 
 [node name="Floor 1" type="StaticBody2D" parent="." unique_id=1789530645]
 
@@ -71,11 +73,11 @@ texture = ExtResource("2_ihfcg")
 offset_left = -1.0
 offset_top = 611.0
 offset_right = 660.0
-offset_bottom = 1155.0
+offset_bottom = 1336.0
 color = Color(0.28235295, 0.78039217, 0.25882354, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor 1" unique_id=804477426]
-position = Vector2(329.5, 883)
+position = Vector2(329.5, 973.5)
 shape = SubResource("RectangleShape2D_hn12h")
 
 [node name="Floor 2" type="StaticBody2D" parent="." unique_id=1660536059]
@@ -84,11 +86,11 @@ shape = SubResource("RectangleShape2D_hn12h")
 offset_left = 887.0
 offset_top = 611.0
 offset_right = 1025.0
-offset_bottom = 1152.0
+offset_bottom = 1336.0
 color = Color(0.28235295, 0.78039217, 0.25882354, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor 2" unique_id=763461147]
-position = Vector2(956.5, 881.5)
+position = Vector2(956, 973.5)
 shape = SubResource("RectangleShape2D_rww2e")
 
 [node name="Floor 3" type="StaticBody2D" parent="." unique_id=608520832]
@@ -97,11 +99,11 @@ shape = SubResource("RectangleShape2D_rww2e")
 offset_left = 1707.0
 offset_top = 398.0
 offset_right = 2788.0
-offset_bottom = 1161.0
+offset_bottom = 1336.0
 color = Color(0.28235295, 0.78039217, 0.25882354, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor 3" unique_id=1822951683]
-position = Vector2(2247.5, 779.5)
+position = Vector2(2247.125, 867.125)
 shape = SubResource("RectangleShape2D_2d5ya")
 
 [node name="wood 1" type="StaticBody2D" parent="." unique_id=480165538]
@@ -158,4 +160,4 @@ shape = SubResource("RectangleShape2D_hbghi")
 
 [node name="Camera2D" type="Camera2D" parent="Player/CollisionShape2D" unique_id=1842463429]
 
-[connection signal="body_entered" from="Cave/Area2D" to="Player" method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="Cave/entrance_cave" to="." method="_on_entrance_cave_body_entered"]

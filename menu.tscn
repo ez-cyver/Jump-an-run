@@ -67,17 +67,6 @@ theme_override_font_sizes/font_size = 53
 text = "Welcome to Jump and Jump! Choose a Level"
 horizontal_alignment = 1
 
-[node name="coming soon 2" type="Label" parent="." unique_id=472403075]
-layout_mode = 0
-offset_left = 451.0
-offset_top = 340.0
-offset_right = 701.0
-offset_bottom = 369.0
-theme_override_colors/font_color = Color(0.011764706, 0.011764706, 0.011764706, 1)
-theme_override_font_sizes/font_size = 21
-text = "coming soon"
-horizontal_alignment = 1
-
 [node name="coming soon 3" type="Label" parent="." unique_id=307704739]
 layout_mode = 0
 offset_left = 802.0
