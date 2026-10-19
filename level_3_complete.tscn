@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://cr5ojgjyb0pyu"]
+
+[ext_resource type="Script" uid="uid://kd4edskebs0f" path="res://level_3_complete.gd" id="1_ux0lo"]
+
+[node name="level_3_complete" type="Node2D" unique_id=260909819]
+script = ExtResource("1_ux0lo")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1565149020]
+offset_right = 1154.0
+offset_bottom = 647.0
+color = Color(0.91764706, 0.96862745, 0.6784314, 1)
+
+[node name="Label" type="Label" parent="." unique_id=745945682]
+offset_right = 1151.0
+offset_bottom = 97.5
+theme_override_colors/font_color = Color(0.011764706, 0.011764706, 0.011764706, 1)
+theme_override_font_sizes/font_size = 70
+text = "Level 3 complete"
+horizontal_alignment = 1
+
+[node name="menu" type="Button" parent="." unique_id=20812232]
+offset_left = 276.0
+offset_top = 442.5
+offset_right = 876.0
+offset_bottom = 542.5
+theme_override_colors/font_color = Color(0.007843138, 0.007843138, 0.007843138, 1)
+theme_override_font_sizes/font_size = 50
+text = "return to menu"
+
+[node name="Label2" type="Label" parent="." unique_id=1668791572]
+offset_left = -2.0
+offset_top = 101.0
+offset_right = 1154.0
+offset_bottom = 328.0
+theme_override_colors/font_color = Color(0.011764706, 0.011764706, 0.011764706, 1)
+theme_override_font_sizes/font_size = 112
+text = "thanks for playing"
+horizontal_alignment = 1
+
+[connection signal="button_down" from="menu" to="." method="_on_menu_button_down"]

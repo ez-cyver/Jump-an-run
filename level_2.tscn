@@ -3,13 +3,10 @@
 [ext_resource type="Script" uid="uid://c1llt2t3u42w8" path="res://level_2.gd" id="1_1y8me"]
 [ext_resource type="Script" uid="uid://mju1wiag47ol" path="res://player.gd" id="1_nmjpi"]
 [ext_resource type="Texture2D" uid="uid://b56neginfintl" path="res://Cave background.jpeg" id="1_xdadj"]
-[ext_resource type="Texture2D" uid="uid://6i42nhfbh0ey" path="res://icon.svg" id="2_xdadj"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_1y8me"]
-size = Vector2(128, 122.25)
+[ext_resource type="Texture2D" uid="uid://ccxh4aiapg8up" path="res://player.png" id="4_1y8me"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xdadj"]
-size = Vector2(2890.5, 441.5)
+size = Vector2(2891, 440)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_585xr"]
 size = Vector2(514, 1479)
@@ -48,6 +45,9 @@ size = Vector2(19, 13)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rww2e"]
 size = Vector2(423, 40)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1y8me"]
+size = Vector2(128, 121.125)
+
 [node name="level_2" type="Node2D" unique_id=260172198]
 script = ExtResource("1_1y8me")
 
@@ -55,21 +55,6 @@ script = ExtResource("1_1y8me")
 position = Vector2(1444.0001, 86)
 scale = Vector2(2.1155677, 1.3541666)
 texture = ExtResource("1_xdadj")
-
-[node name="Player" type="CharacterBody2D" parent="." unique_id=581334265]
-script = ExtResource("1_nmjpi")
-
-[node name="Icon" type="Sprite2D" parent="Player" unique_id=1813924327]
-position = Vector2(193.868, 548.38)
-scale = Vector2(0.5, 0.48)
-texture = ExtResource("2_xdadj")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=2030388621]
-position = Vector2(194, 548.4375)
-scale = Vector2(0.5, 0.5)
-shape = SubResource("RectangleShape2D_1y8me")
-
-[node name="Camera2D" type="Camera2D" parent="Player/CollisionShape2D" unique_id=325809311]
 
 [node name="floor" type="StaticBody2D" parent="." unique_id=612086285]
 
@@ -82,7 +67,7 @@ color = Color(0.35273758, 0.37214977, 0.36567903, 1)
 metadata/_edit_use_anchors_ = true
 
 [node name="floor 1 colision" type="CollisionShape2D" parent="floor" unique_id=1649899038]
-position = Vector2(1442.75, 825.25)
+position = Vector2(1442.5, 826)
 shape = SubResource("RectangleShape2D_xdadj")
 
 [node name="Stair color" type="Polygon2D" parent="floor" unique_id=629970593]
@@ -390,6 +375,21 @@ color = Color(0.9882353, 0.63529414, 0.003921569, 1)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="lava/lava" unique_id=681703835]
 position = Vector2(2363.5, 586)
 shape = SubResource("RectangleShape2D_rww2e")
+
+[node name="Player" type="CharacterBody2D" parent="." unique_id=581334265]
+script = ExtResource("1_nmjpi")
+
+[node name="Icon" type="Sprite2D" parent="Player" unique_id=1813924327]
+position = Vector2(280.875, 526.77997)
+scale = Vector2(0.19528875, 0.18259811)
+texture = ExtResource("4_1y8me")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=2030388621]
+position = Vector2(281, 526.71875)
+scale = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_1y8me")
+
+[node name="Camera2D" type="Camera2D" parent="Player/CollisionShape2D" unique_id=325809311]
 
 [connection signal="body_entered" from="spikes/Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="lava/lava" to="." method="_on_lava_body_entered"]

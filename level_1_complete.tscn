@@ -37,15 +37,5 @@ theme_override_colors/font_color = Color(0.007843138, 0.007843138, 0.007843138, 
 theme_override_font_sizes/font_size = 50
 text = "return to menu"
 
-[node name="Label2" type="Label" parent="." unique_id=683135469]
-offset_left = 426.0
-offset_top = 279.0
-offset_right = 705.0
-offset_bottom = 314.0
-theme_override_colors/font_color = Color(0.011764706, 0.011764706, 0.011764706, 1)
-theme_override_font_sizes/font_size = 23
-text = "comming soon"
-horizontal_alignment = 1
-
 [connection signal="button_down" from="level_2" to="." method="_on_level_2_button_down"]
 [connection signal="button_down" from="menu" to="." method="_on_menu_button_down"]

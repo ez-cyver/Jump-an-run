@@ -3,8 +3,8 @@
 [ext_resource type="Script" uid="uid://mju1wiag47ol" path="res://player.gd" id="1_hbghi"]
 [ext_resource type="Texture2D" uid="uid://dnes2b5qvjo6l" path="res://Cave.jpeg" id="1_ihfcg"]
 [ext_resource type="Script" uid="uid://dxvomrmaefqor" path="res://level_1.gd" id="1_rka8t"]
-[ext_resource type="Texture2D" uid="uid://6i42nhfbh0ey" path="res://icon.svg" id="2_hn12h"]
 [ext_resource type="Texture2D" uid="uid://c04x08nostj3m" path="res://schield.jpeg" id="2_rka8t"]
+[ext_resource type="Texture2D" uid="uid://ccxh4aiapg8up" path="res://player.png" id="5_rka8t"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_585xr"]
 size = Vector2(117.5, 114)
@@ -149,9 +149,9 @@ shape = SubResource("RectangleShape2D_u2dad")
 script = ExtResource("1_hbghi")
 
 [node name="Icon" type="Sprite2D" parent="Player" unique_id=1762450717]
-position = Vector2(193.868, 548.38)
-scale = Vector2(0.5, 0.48)
-texture = ExtResource("2_hn12h")
+position = Vector2(193.5, 548.5)
+scale = Vector2(0.19148934, 0.18428993)
+texture = ExtResource("5_rka8t")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=1464723347]
 position = Vector2(194, 548.4375)

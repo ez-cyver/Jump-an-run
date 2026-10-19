@@ -11,8 +11,9 @@ script = ExtResource("1_lti8b")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=137617182]
 layout_mode = 0
+offset_left = -18.0
 offset_top = -2.0
-offset_right = 1153.0
+offset_right = 1135.0
 offset_bottom = 671.0
 color = Color(0.91798484, 0.9690184, 0.6767413, 1)
 
@@ -29,6 +30,17 @@ theme_override_colors/font_color = Color(0.007843138, 0.007843138, 0.007843138, 
 theme_override_font_sizes/font_size = 40
 text = "Level 1"
 
+[node name="Label1" type="Label" parent="." unique_id=1026009103]
+layout_mode = 0
+offset_left = 101.0
+offset_top = 330.0
+offset_right = 351.0
+offset_bottom = 372.0
+theme_override_colors/font_color = Color(0.011764706, 0.011764706, 0.011764706, 1)
+theme_override_font_sizes/font_size = 30
+text = "Plains"
+horizontal_alignment = 1
+
 [node name="level_2" type="Button" parent="." unique_id=1109008137]
 custom_minimum_size = Vector2(9, 0)
 layout_mode = 1
@@ -42,6 +54,17 @@ offset_right = -6.1035156e-05
 theme_override_colors/font_color = Color(0.007843138, 0.007843138, 0.007843138, 1)
 theme_override_font_sizes/font_size = 40
 text = "Level 2"
+
+[node name="Label2" type="Label" parent="." unique_id=1317861785]
+layout_mode = 0
+offset_left = 449.0
+offset_top = 330.0
+offset_right = 699.0
+offset_bottom = 372.0
+theme_override_colors/font_color = Color(0.011764706, 0.011764706, 0.011764706, 1)
+theme_override_font_sizes/font_size = 30
+text = "Cave"
+horizontal_alignment = 1
 
 [node name="level_3" type="Button" parent="." unique_id=333692006]
 layout_mode = 1
@@ -70,12 +93,12 @@ horizontal_alignment = 1
 [node name="coming soon 3" type="Label" parent="." unique_id=307704739]
 layout_mode = 0
 offset_left = 802.0
-offset_top = 340.0
+offset_top = 330.0
 offset_right = 1052.0
 offset_bottom = 369.0
 theme_override_colors/font_color = Color(0.011764706, 0.011764706, 0.011764706, 1)
-theme_override_font_sizes/font_size = 21
-text = "coming soon"
+theme_override_font_sizes/font_size = 30
+text = "lava"
 horizontal_alignment = 1
 
 [connection signal="pressed" from="level_1" to="." method="_on_level_1_pressed"]
